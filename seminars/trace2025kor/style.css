@@ -175,8 +175,10 @@ ul.task-list {
   .row {
     overflow-x: scroll;
   }
+  section {
+    width: 95%;
 }
-
+}
 @media (min-width: 1024px) {
   section {
     width: 952px;
