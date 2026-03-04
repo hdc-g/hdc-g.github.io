@@ -8,13 +8,9 @@ p {
     margin: 1rem;
 }
 
-iframe {
-  padding: 2rem;
-  width: 90% ;
-  height: 400;
-  border:0;
-  overflow-x: scroll;
-}
+
+
+
 
 body {
   line-height: 1.5;
@@ -191,9 +187,33 @@ ul.task-list {
   section {
     width: 95%;
 }
+iframe {
+  display: none;
 }
+}
+
+
+@media (max-width: 840px) {
+iframe {
+  display: none;
+}
+
+
+}
+@media (min-width: 840px) {
+  
+ iframe {
+  padding: 2rem;
+  width: 90%;
+  height: 400;
+  border:0
+  } 
+}
+
+
 @media (min-width: 1024px) {
   section {
     width: 952px;
   }
+ 
 }
