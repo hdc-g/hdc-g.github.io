@@ -9,13 +9,18 @@ p {
 }
 
 iframe {
-  margin: 1rem;
+  padding: 2rem;
+  width: 90% ;
+  height: 400;
+  border:0;
+  overflow-x: scroll;
 }
 
 body {
   line-height: 1.5;
   font-size: clamp(1.125rem, 2vw, 1.25rem);
   width: 100%;
+
 }
 
 
