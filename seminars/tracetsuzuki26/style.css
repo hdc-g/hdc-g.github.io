@@ -72,6 +72,7 @@ section {
   font-family: sans-serif;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  text-align: center;
 }
 
 .btn-registro:hover {
