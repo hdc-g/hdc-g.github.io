@@ -1,0 +1,94 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+.bgimg {
+  min-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.sub {
+  position: absolute;
+}
+
+.image-block {
+  position: absolute;
+  top: 65px;
+  left: 15%;
+}
+
+.image-block-small {
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+}
+
+.text-block {
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  width: 50%;
+  color: #fff;
+  text-shadow: 2px 1px #000;
+}
+
+.text-block-small {
+  position: absolute;
+  right: 40px;
+  bottom: 90px;
+  width: 80vw;
+  color: #fff;
+  text-shadow: 2px 1px #000;
+}
+
+.text-body {
+  padding: 50px 25% 25%;
+}
+
+.image-entretexto {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.image-entretexto img {
+  width: 100%;
+}
+
+.section-title-spaced {
+  padding-top: 20px;
+}
+
+.text-enlaces {
+  color: #006580;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 50vw) {
+  .container {
+    position: relative;
+    width: 100vw;
+    height: 30vw;
+    overflow: hidden;
+  }
+}

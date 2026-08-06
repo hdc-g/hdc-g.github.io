@@ -1,0 +1,173 @@
+:root {
+  --ink: #171717;
+  --blue: #34356f;
+  --link: #315a88;
+  --rule: #c9c9c9;
+  --muted: #555;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.28;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.page {
+  width: min(780px, calc(100% - 40px));
+  margin: 82px auto 60px;
+}
+
+.top {
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--rule);
+}
+
+h1 {
+  margin: 0;
+  color: var(--blue);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.identity {
+  margin: 22px 0 42px 100px;
+}
+
+.identity-name {
+  margin: 0 0 3px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.identity p {
+  margin: 2px 0;
+}
+
+section + section {
+  margin-top: 34px;
+}
+
+h2 {
+  margin: 0 0 15px;
+  padding-bottom: 4px;
+  color: var(--blue);
+  border-bottom: 1px solid var(--rule);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 105px minmax(0, 1fr);
+  gap: 0 12px;
+  margin: 0 0 10px;
+}
+
+.date {
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.entry-body p {
+  margin: 0;
+}
+
+.entry-title {
+  font-weight: 700;
+}
+
+.details {
+  margin: 3px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.details li {
+  margin: 1px 0;
+}
+
+.footer {
+  margin: 42px 0 0 117px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .page {
+    width: min(100% - 28px, 780px);
+    margin-top: 76px;
+  }
+
+  .identity {
+    margin: 22px 0 36px;
+  }
+
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    margin-bottom: 15px;
+  }
+
+  .date {
+    color: var(--blue);
+    font-size: 14px;
+  }
+
+  .footer {
+    margin-left: 0;
+  }
+}
+
+@media print {
+  @page {
+    size: letter;
+    margin: 0.65in;
+  }
+
+  body {
+    font-size: 10.5pt;
+  }
+
+  .page {
+    width: 100%;
+    margin: 0;
+  }
+
+  .topnav,
+  .footer {
+    display: none;
+  }
+
+  section + section {
+    margin-top: 24px;
+  }
+
+  .entry {
+    margin-bottom: 7px;
+  }
+}
