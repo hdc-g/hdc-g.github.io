@@ -135,7 +135,7 @@ font-weight: 400;
   outline-offset: 3px;
 }
 
-.js .activities .activity:nth-of-type(n + 5) {
+.js .activities .activity:nth-of-type(n + 6) {
   display: none;
 }
 
