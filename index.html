@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
-<title>Héctor del Castillo Gordillo</title>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Héctor del Castillo Gordillo</title>
   <link rel="icon" type="image/x-icon" href="/photos/H.png">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="/nav.css">
+  <script src="/script.js" defer></script>
 </head>
 <body>
 
@@ -32,7 +34,7 @@
       <a>Héctor del Castillo Gordillo</a>
       <a class="topnav-link--right" href=".\blog">Blog</a>
       <a class="topnav-link--right" href=".\notas\index.html">Notes</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="#" class="icon" id="nav-toggle" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
       </a>
    </div>
@@ -48,10 +50,11 @@
 
 
 
-<div class="text-body"> I am a BRL-LFANT postdoctoral researcher at Chonnam National University in Gwangju, South Korea. 
-   <p> I was FONDECYT 2022 postdoctoral fellow at the Universidad de Santiago de Chile. I have completed my Ph.D.  under the supervision of Luis Lomelí and Guy Henniart (Chile-France Cotutelle). My main research focus is the Langlands program. My Ph. D. thesis establishes a special case of Langlands functionality conjecture for globally generic automorphic representations in positive characteristic. 
-    <p>  Apart from my research interests,  I also enjoy learning different aspects of algebraic geometry. 
-      <p>  Finally, my interests outside of mathematics are cooking, coffee & tea, health and philosophy.</p>
+<div class="text-body">
+  <p>I am a BRL-LFANT postdoctoral researcher at Chonnam National University in Gwangju, South Korea.</p>
+  <p>I was FONDECYT 2022 postdoctoral fellow at the Universidad de Santiago de Chile. I completed my Ph.D. under the supervision of Luis Lomelí and Guy Henniart (Chile-France Cotutelle). My main research focus is the Langlands program. My Ph.D. thesis establishes a special case of the Langlands functoriality conjecture for globally generic automorphic representations in positive characteristic.</p>
+  <p>Apart from my research interests, I also enjoy learning different aspects of algebraic geometry.</p>
+  <p>Finally, my interests outside of mathematics are cooking, coffee &amp; tea, health and philosophy.</p>
 
       
       
@@ -59,78 +62,84 @@
       <div class="image-entretexto"><img src=".\photos\GrothendieckBanner.png" alt="Mathematical notes collage"></div>
 
 <h3>(Pre)publications</h3>
-<a><p><b>Generic Langlands conjectures for general spin groups in positive characteristic</b>. With Kim and Lomelí. Work in progress.</p></a>
+<div class="paper">
+<ol class="paper-list" reversed start="6">
 
-<a href="https://arxiv.org/abs/2507.07423" class="text-enlaces"><p><b>Higher Hida  theory for Drinfeld modular curves</a></b>. Preprint (2025).</p>
+<li><em>Generic Langlands conjectures for general spin groups in positive characteristic</em>, <b>with Kim and Lomelí. Work in progress.</b></li>
 
-<a href="https://arxiv.org/abs/2412.00467"class="text-enlaces"><p><b>On Kim's Assumption A over function fields</a></b>, with Lomelí. To appear in Proceedings for the BIRS-CMO Workshop "Langlands Program: Number Theory and Representation Theory", a volume in the Fields Institute Monographs (2026)</p>
+<li><a href="https://arxiv.org/abs/2507.07423" class="text-enlaces"><em>Higher Hida theory for Drinfeld modular curves</em></a><b>, with Barrera and Rosso. Preprint (2025).</b></li>
 
-<a href="https://arxiv.org/abs/2412.00229"class="text-enlaces"><p><b>On generic representations of quasi-split reductive groups over local fields of positive characteristic</b></a>, with Henniart and Lomelí. Preprint (2024). </p>
-<a href="https://arxiv.org/abs/2201.03119"class="text-enlaces"><b>Langlands functoriality conjecture for SO*(2n) in positive characteristic.</b></a> Preprint (2022).
-<a href="https://tel.archives-ouvertes.fr/tel-03350460"class="text-enlaces"><p><b>Thesis</b></a> (2021).</p>
+<li><a href="https://arxiv.org/abs/2412.00467" class="text-enlaces"><em>On Kim's Assumption A over function fields</em></a>, <b>with Lomelí. Proceedings for the BIRS-CMO Workshop "Langlands Program: Number Theory and Representation Theory", a volume in the Fields Institute Monographs (to appear).</b></li>
 
+<li><a href="https://arxiv.org/abs/2412.00229" class="text-enlaces"><em>On generic representations of quasi-split reductive groups over local fields of positive characteristic</em></a>, <b>with Henniart and Lomelí. Preprint (2024).</b></li>
+<li><a href="https://arxiv.org/abs/2201.03119" class="text-enlaces"><em>Langlands functoriality conjecture for SO*(2n) in positive characteristic.</em></a><b> Preprint (2022)</b>.</li>
+<li><a href="https://tel.archives-ouvertes.fr/tel-03350460" class="text-enlaces"><em>Thesis</em></a> <b>(2021).</b></li>
+</ol>
 
+</div>
 
 <h3 class="section-title-spaced">Research activities</h3>
+<div class="activities" id="research-activities">
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/cnunt/">G-BRL Number Theory Seminar (2026)</a><br>Organized with Keunyoung Jeong, Yeansu Kim and Wonwoong Lee</p>
+  </article>
 
-<a href="https://sites.google.com/view/cnunt/" class="text-enlaces"><p>G-BRL Number Theory Seminar (2026)</a>.
- Organized with Keunyoung Jeong, Yeansu Kim and Wonwoong Lee.</p>
+  <article class="activity">
+    <p><a href="https://hdc-g.github.io/seminars/tracetsuzuki26/">Lecture series on certain Trace Formulae by Masao Tsuzuki (April 2026)</a><br>Organized with Yeansu Kim and Andrei Seymour-Howell</p>
+  </article>
 
-<a href="https://hdc-g.github.io/seminars/tracetsuzuki26/" class="text-enlaces"><p>Lecture series on certain Trace Formulae by Masao Tsuzuki (April 2026)</a>. Organized with Yeansu Kim and Andrei Seymour-Howell.</p>
+  <article class="activity">
+    <p><a href="https://hdc-g.github.io/seminars/trace2025kor/index.html">Learning seminar: Trace Formula (2025-2026)</a><br>Organized with Andrei Seymour-Howell</p>
+  </article>
 
+  <article class="activity">
+    <p><a href="http://mat.uc.cl/~federico.castillo/santas.html">Seminario de Algebra, Teoría de números, y áreas afines (SANTAS 2024-2025)</a><br>Organized with Daniel Barrera, Federico Castillo and Gonzalo Manzano (PUC, U. de Chile and USACH)</p>
+  </article>
 
+  <button class="show-more-button" id="activities-toggle" type="button" aria-controls="research-activities" aria-expanded="false">Show more</button>
 
+  <article class="activity">
+    <p><a href="https://hdc-g.github.io/agchile2024/">Arithmetic and p-adic geometry in Chile (December 2024)</a>.<br>Organized with Daniel Barrera, Ricardo Brasca, Adrian Iovita, Rafael Labarca, Jaclyn Lang, Ricardo Menares and Giovanni Rosso.</p>
+  </article>
 
-<a href="https://hdc-g.github.io/seminars/trace2025kor/index.html" class="text-enlaces"><p> Learning seminar: Trace Formula (2025-2026)</a>. Organized with Andrei Seymour-Howell.</p>
-<a href="http://mat.uc.cl/~federico.castillo/santas.html"class="text-enlaces"><p>Seminario de Algebra, Teoría de números, y áreas afines (SANTAS 2024-2025)</a>.  Organized with Daniel Barrera, Federico Castillo and Gonzalo Manzano (PUC, U. de Chile and USACH).</p>
-<a href="https://hdc-g.github.io/agchile2024/"class="text-enlaces"><p>Arithmetic and p-adic geometry in Chile (December 2024)</a>. Organized with Daniel Barrera, Ricardo Brasca, Adrian Iovita, Rafael Labarca, Jaclyn Lang, Ricardo Menares and Giovanni Rosso.</p> 
-<a href="https://sites.google.com/view/pucvjornada/2023"class="text-enlaces"><p>Jornada de Aritmética y Geometría en Valparaíso (2023 October)</a> Organized with Luis Lomelí.
-<a href="https://sites.google.com/view/danielbarrerasalazar/seminario-automorfo"class="text-enlaces"><p>Seminario Automorfo (2023 October-2024 January)</a> Organized with Daniel Barrera and Sebastián Herrero.
-<a href="https://sites.google.com/view/encuentropucv-usach/"class="text-enlaces"><p>Representaciones y Teoría de números: PUCV-USACh (2023 June)</a> Organized with Luis Lomelí.
-<a href="https://sites.google.com/view/grp2023/Grp2023-1"class="text-enlaces"><p>Grupo de estudio (2023 March-April)</a>.  Organized with Luis Lomelí and Javier Navarro.
-<a href="https://sites.google.com/view/danielbarrerasalazar/jornada-automorfa"class="text-enlaces"><p>Jornada Automorfa (2023 January).</a> Organized with Daniel Barrera.
-<a href="https://sites.google.com/view/danielbarrerasalazar/math/a-short-introduction-to-the-ggp-conjectures"class="text-enlaces"><p>A short introduction to the GGP conjectures (2023 January),by Xenia Dimitrakopoulou</a>. Organized with Daniel Barrera.
-<a href="https://sites.google.com/view/danielbarrerasalazar/math/funtorialidad-y-deformaci%C3%B3n-p-%C3%A1dica"class="text-enlaces"><p>Seminario  Funtorialidad de Langlands y variación p-ádica (2022 March- 2023 January)</a>. Organized with Daniel Barrera and Luis Santiago Palacios.
-<a href="https://sites.google.com/view/danielbarrerasalazar/math/an-introduction-to-proof-assistants" class="text-enlaces"><p>An introduction to Proof Assistants (2022 November) by Riccardo Brasca</a>. Organized with Daniel Barrera.
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/pucvjornada/2023">Jornada de Aritmética y Geometría en Valparaíso (October 2023)</a>.<br>Organized with Luis Lomelí.</p>
+  </article>
+
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/danielbarrerasalazar/seminario-automorfo">Seminario Automorfo (October 2023-January 2024)</a>.<br>Organized with Daniel Barrera and Sebastián Herrero.</p>
+  </article>
+
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/encuentropucv-usach/">Representaciones y Teoría de números: PUCV-USACh (June 2023)</a>.<br>Organized with Luis Lomelí.</p>
+  </article>
+
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/grp2023/Grp2023-1">Grupo de estudio (March-April 2023)</a>.<br>Organized with Luis Lomelí and Javier Navarro.</p>
+  </article>
+
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/danielbarrerasalazar/jornada-automorfa">Jornada Automorfa (January 2023)</a>.<br>Organized with Daniel Barrera.</p>
+  </article>
+
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/danielbarrerasalazar/math/a-short-introduction-to-the-ggp-conjectures">A short introduction to the GGP conjectures (January 2023), by Xenia Dimitrakopoulou</a>.<br>Organized with Daniel Barrera.</p>
+  </article>
+
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/danielbarrerasalazar/math/funtorialidad-y-deformaci%C3%B3n-p-%C3%A1dica">Seminario Funtorialidad de Langlands y variación p-ádica (March 2022-January 2023)</a>.<br>Organized with Daniel Barrera and Luis Santiago Palacios.</p>
+  </article>
+
+  <article class="activity">
+    <p><a href="https://sites.google.com/view/danielbarrerasalazar/math/an-introduction-to-proof-assistants">An introduction to Proof Assistants (November 2022), by Riccardo Brasca</a>.<br>Organized with Daniel Barrera.</p>
+  </article>
+</div>
 
 <h3>Links</h3>
 <p><a href="./cv/index.html">Short CV</a></p>
-<p><a href="https://zbmath.org/authors/del-castillo.hector"class="text-enlaces">zbMath</a></p>
-<p><a href="http://matematicas.unex.es/~navarro/res/"class="text-enlaces">Grothendieck en Español</a></p>
-<p><a href="https://www.franceculture.fr/savoirs"class="text-enlaces">France Culture</a></p>
-
-
-
-
-
-
-
-
-<script>
-  // When the user scrolls down 20px from the top of the document, slide down the navbar
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
-      document.getElementById("myTopnav").style.top = "0";  document.getElementById("myTopnav").style.background = "#333";
-    } else {
-      document.getElementById("myTopnav").style.top = "0";  document.getElementById("myTopnav").style.background = "#33333300";
-    }
-  }
-
-
-
-  function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-
-  </script>
-
-
+<p><a href="https://zbmath.org/authors/del-castillo.hector" class="text-enlaces">zbMath</a></p>
+<p><a href="http://matematicas.unex.es/~navarro/res/" class="text-enlaces">Grothendieck en Español</a></p>
+<p><a href="https://www.franceculture.fr/savoirs" class="text-enlaces">France Culture</a></p>
+</div>
 </body>
 </html>
