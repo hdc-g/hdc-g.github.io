@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinta de Möbius como conjunto simplicial</title>
+    <script>if (new URLSearchParams(location.search).has("embed")) document.documentElement.classList.add("embedded");</script>
+    <script>
+      window.MathJax = {
+        tex: { inlineMath: [["\\(", "\\)"]] },
+        options: { enableMenu: false }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <link rel="stylesheet" href="./styles.css?v=13" />
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow">Una triangulación · dos representaciones</p>
+          <h1>La cinta de Möbius como conjunto simplicial</h1>
+        </div>
+        <p class="intro">Selecciona un triángulo o una arista para seguir sus aplicaciones cara.</p>
+      </header>
+
+      <section class="workspace" aria-label="Visualización sincronizada de la cinta de Möbius">
+        <article class="panel geometry-panel">
+          <div class="panel-heading">
+            <div>
+              <span class="panel-index">A</span>
+              <h2>Realización geométrica</h2>
+            </div>
+            <span class="hint">Arrastra para girar · rueda para acercar</span>
+          </div>
+          <div id="mobius-canvas" class="mobius-canvas" aria-label="Cinta de Möbius tridimensional triangulada"></div>
+        </article>
+
+        <article class="panel simplicial-panel">
+          <div class="panel-heading">
+            <div>
+              <span class="panel-index">B</span>
+              <h2>Datos simpliciales</h2>
+            </div>
+            <span class="hint">Selecciona un elemento</span>
+          </div>
+
+          <div id="simplicial-map" class="simplicial-map">
+            <div class="degree-diagram" aria-label="Diagrama X dos, X uno, X cero">
+              <div class="degree-label"><span class="math-label">\(X_2\)</span></div>
+              <div class="face-operators" aria-label="Aplicaciones cara de triángulos a aristas">
+                <span><span class="math-label">\(d_0\)</span><b aria-hidden="true"></b></span>
+                <span><span class="math-label">\(d_1\)</span><b aria-hidden="true"></b></span>
+                <span><span class="math-label">\(d_2\)</span><b aria-hidden="true"></b></span>
+              </div>
+              <div class="degree-label"><span class="math-label">\(X_1\)</span></div>
+              <div class="face-operators" aria-label="Aplicaciones cara de aristas a vértices">
+                <span><span class="math-label">\(d_0\)</span><b aria-hidden="true"></b></span>
+                <span><span class="math-label">\(d_1\)</span><b aria-hidden="true"></b></span>
+              </div>
+              <div class="degree-label"><span class="math-label">\(X_0\)</span></div>
+            </div>
+            <div id="simplicial-levels" class="simplicial-levels">
+              <svg id="face-links" class="face-links" aria-hidden="true"></svg>
+              <section class="degree-row" data-degree="2">
+                <div id="triangles-row" class="simplex-list triangles-list"></div>
+              </section>
+              <section class="degree-row" data-degree="1">
+                <div id="edges-row" class="simplex-list edges-list"></div>
+              </section>
+              <section class="degree-row" data-degree="0">
+                <div id="vertices-row" class="simplex-list vertices-list"></div>
+              </section>
+            </div>
+          </div>
+
+          <div class="selection-readout" aria-live="polite">
+            <div class="selected-name"><span>Seleccionado</span><strong id="selected-simplex">Ninguno</strong></div>
+            <div class="face-expression">
+              <span id="selected-faces">Elige un símplice</span>
+              <b>→</b>
+              <span id="selected-vertices">para ver sus caras</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <footer class="legend">
+        <span><i class="legend-mark triangle-mark"></i>2-símplice</span>
+        <span><i class="legend-mark edge-mark"></i>1-símplice</span>
+        <span><i class="legend-mark vertex-mark"></i>0-símplice</span>
+        <span class="count">6 vértices · 12 aristas · 6 triángulos</span>
+      </footer>
+    </main>
+
+    <script type="module" src="./app.js?v=10"></script>
+  </body>
+</html>
