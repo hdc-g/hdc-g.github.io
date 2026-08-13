@@ -1,3 +1,9 @@
+:root {
+  /* Prueba tipográfica. Valores anteriores: "Montserrat", sans-serif */
+  --notes-content-font-family: "Source Serif 4", serif;
+  --notes-interface-font-family: "Source Sans 3", sans-serif;
+}
+
 body,
 h1,
 h2,
@@ -5,7 +11,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--notes-content-font-family);
+}
+
+/* La navegación usa la pareja sans serif de la prueba. */
+body .topnav {
+  font-family: var(--notes-interface-font-family);
 }
 
 .w3-row-padding img {
@@ -65,6 +76,24 @@ h6 {
 
 .text-enlaces {
   color: #006580;
+}
+
+.text-body a {
+  color: #006580;
+  text-decoration: none;
+  text-underline-offset: 3px;
+  transition: color 160ms ease, background-color 160ms ease;
+}
+
+.text-body a:hover {
+  color: #003f50;
+  background-color: rgb(0 101 128 / 8%);
+  text-decoration: underline;
+}
+
+.text-body a:focus-visible {
+  outline: 2px solid #006580;
+  outline-offset: 3px;
 }
 
 .responsive {

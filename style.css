@@ -1,3 +1,9 @@
+:root {
+  /* Prueba tipográfica. Valores anteriores: "Montserrat", sans-serif */
+  --content-font-family: "Source Serif 4", serif;
+  --interface-font-family: "Source Sans 3", sans-serif;
+}
+
 body,
 h1,
 h2,
@@ -5,7 +11,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--content-font-family);
+}
+
+body .topnav,
+.show-more-button,
+.site-footer {
+  font-family: var(--interface-font-family);
 }
 
 .w3-row-padding img {
@@ -87,13 +99,13 @@ h6 {
 
 
 .paper em {
-font-family: "Alegreya", serif;
+font-family: var(--content-font-family);
 font-style: italic;
 font-weight: 700;
 }
 
 .paper b {
-font-family: "Source Serif 4", serif;
+font-family: var(--content-font-family);
 font-weight: 400;
 }
 
